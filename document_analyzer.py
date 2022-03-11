@@ -15,6 +15,7 @@ result = [item for items, c in Counter(word_list).most_common() for item in [ite
 #counts and prints frequency
 i = 0
 j = 0
+print('')
 while i < 5:
     current_word = result[j]
     count = 0
