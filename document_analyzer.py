@@ -10,7 +10,7 @@ data_formatted="".join(c for c in data if (c.isalnum() or c.isspace())).strip()
 word_list = data_formatted.split(' ')
 
 #sorts by frequency
-result = [item for items, c in Counter(word_list).most_common() for item in [items] * c]
+result = [item for items, c in Counter(sorted(word_list)).most_common() for item in [items] * c]
 
 #counts and prints frequency
 i = 0
